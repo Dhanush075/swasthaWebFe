@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+button {
+  height: 40px !important;
+}
+
+input,
+select {
+  min-height: 40px !important;
+  border-radius: 3px !important;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+a:hover {
+  color: #010101;
+}
+
+.ant-form {
+  background: linear-gradient(
+    to right,
+    rgba(104, 208, 128, 0.8),
+    rgba(52, 144, 180, 0.5)
+  );
+  border-radius: 30px;
+}
+
+.ant-form .ant-form-item-label label {
+  padding: 0 !important;
+  font-weight: 500 !important;
+  font-size: 16px;
+}
+
+.custom-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: white !important;
+  color: #3490b4 !important;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .ant-form {
+    padding: 20px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px !important;
+  }
+
+  .custom-button {
+    width: 100%;
+  }
+
+  .form-text {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+}

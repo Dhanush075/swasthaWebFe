@@ -1,0 +1,17 @@
+.lg-react-element {
+    column-count: 3;
+    column-gap: 10px;
+    margin-top: 5rem;
+}
+
+video {
+    max-width: 100%;
+    display: block;
+    padding: 5px 0px;
+    border-radius: 20px;
+}
+
+video:hover {
+    filter: opacity(.9);
+    transform: scale(1.01);
+}

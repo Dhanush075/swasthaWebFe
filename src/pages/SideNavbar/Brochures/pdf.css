@@ -1,0 +1,45 @@
+.pdf-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pdf-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 150%; 
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.pdf-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-options {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+}
+
+.download-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.download-button i {
+  margin-right: 5px;
+}
